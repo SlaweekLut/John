@@ -59,6 +59,13 @@ body::-webkit-scrollbar {
   background: #FF6464;
   padding: 10px 20px;
   border: 0;
+  -webkit-transition: background .3s ease;
+  -o-transition: background .3s ease;
+  transition: background .3s ease;
+}
+
+.button:hover {
+  background: #d85454;
 }
 
 .section-title {
@@ -95,6 +102,10 @@ body::-webkit-scrollbar {
 }
 
 .nav__link:hover {
+  color: #FF6464;
+}
+
+.nav__link.active {
   color: #FF6464;
 }
 
@@ -141,6 +152,7 @@ body::-webkit-scrollbar {
   position: relative;
   border: 0;
   z-index: 2;
+  outline: none;
 }
 
 .burger-button:after, .burger-button:before {
