@@ -1,0 +1,56 @@
+@import "base.scss";
+.blog {
+    &__title {
+        font-size: 44px;
+        font-weight: 700;
+        margin-bottom: 25px;
+    }
+    @include media($md4) {
+        &__title {
+            font-size: 30px;
+            margin-bottom: 0;
+        }
+    }
+}
+.blog-block {
+    padding: 30px 0;
+    border-bottom: 1px solid #e0e0e0;
+    &__title {
+        font-size: 30px;
+        font-weight: 500;
+    }
+
+    &__date, &__tags {
+        font-size: 20px;
+        margin: 16px 0;
+    }
+
+    &__tags {
+        color: $light;
+        padding-left: 20px;
+    }
+
+    &__date {
+        padding-right: 25px;
+        border-right: 1px solid #000;
+    }
+    @include media($md4) {
+        padding: 18px 0 24px;
+        &__title {
+            font-size: 26px;
+        }
+
+        &__date, &__tags {
+            font-size: 16px;
+            margin: 5px 0 16px;
+        }
+
+        &__tags {
+            padding-left: 15px;
+        }
+
+        &__date {
+            padding-right: 15px;
+        }
+    }
+}
