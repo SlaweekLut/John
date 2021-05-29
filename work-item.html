@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/682b5a2d73.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet type="text/css" href="assets/css/main.css">
+    <link rel="stylesheet type="text/css" href="assets/css/work.css">
+    <title>John</title>
+</head>
+<body>
+    <header class="header">
+        <button class="burger-button" onclick="burg()"></button>
+        <nav class="nav">
+            <a href="work.html" class="nav__link active">Works</a>
+            <a href="blog.html" class="nav__link">Blog</a>
+            <a href="index.html" class="nav__link">Contact</a>
+        </nav>
+    </header>
+    <section class="work-item section-container">
+        <p class="work-item__title">Designing Dashboards with usability in mind</p>
+        <div class="work-item__row">
+            <p class="work-item__date">2020</p>
+            <p class="work-item__theme">Dashboard, User Experience Design</p>
+        </div>
+        <p class="work-item__text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+        <img src="assets/img/work-item-1.png" alt="Image work" class="work-item__img first-img">
+        <p class="work-item__heading">Heading 1</p>
+        <p class="work-item__sub-heading">Heading 2</p>
+        <p class="work-item__text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+        <img src="assets/img/work-item-2.png" alt="Image work" class="work-item__img">
+        <img src="assets/img/work-item-3.png" alt="Image work" class="work-item__img">
+
+    </section>
+    <footer class="footer">
+        <div class="column">
+            <div class="row">
+                <a href="#" class="footer__link"><i class="fab fa-facebook-square"></i></a>
+                <a href="#" class="footer__link"><i class="footer__link fab fa-instagram"></i></a>
+                <a href="#" class="footer__link"><i class="footer__link fab fa-twitter"></i></a>
+                <a href="#" class="footer__link"><i class="footer__link fab fa-linkedin"></i></a>
+            </div>
+            <p class="footer__rights">Copyright ©2020 All rights reserved </p>
+        </div>
+    </footer>
+    <script>
+        let burgBtn = document.querySelector('.burger-button')
+        let burgNav = document.querySelector('.nav')
+        function burg() {
+            burgBtn.classList.toggle('active')
+            burgNav.classList.toggle('active')
+        }
+    </script>
+</body>
+</html>
